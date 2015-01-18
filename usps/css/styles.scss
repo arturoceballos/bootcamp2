@@ -1,26 +1,4 @@
 @import "reset";
 @import "variables";
-
-header {
-	background-color: $primaryColor;
-}
-
-body {
-	color: $primaryText;
-}
-.hero {
-	height: 250px;
-	background-image: url("../img/sky.jpg");
-	background-size: 100%;
-	background-repeat: no-repeat;
-}
-
-main {
-	background-color: $mainColor;
-}
-article {
-	background-color: $articleColor;
-}
-footer {
-	background-color: $footerColor;
-}
+@import "style";
+@import "queries";

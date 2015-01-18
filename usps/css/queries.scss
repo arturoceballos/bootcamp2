@@ -1,0 +1,46 @@
+$speed: 1000ms;
+$ease: ease-in-out;
+
+body {
+	background-color: blue;
+}
+img {
+		display: block;
+		margin: 0 auto;
+	}
+
+* {transition: all $speed $ease;}
+
+// body {transition: background-color 500ms ease-in-out;}
+// img {transition: width 500ms ease-in-out;}
+// h1 {transition: font-size 500ms ease-in-out;}
+p {
+	font-size: 5vw;
+}
+h1 {
+	font-size: 20vw;
+}
+
+@media screen and (max-width:480px){
+	body {
+		background-color: green;
+	}
+	img {
+		width: 75vw;
+	}
+	h1 {
+		// font-size: 40px;
+	}
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px){
+	body {
+		background-color: red;
+	}
+	img {
+		width: 50%;
+	}
+	h1 {
+		// font-size: 60px;
+	}
+}

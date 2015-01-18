@@ -1,0 +1,106 @@
+body {
+	color: $primaryText;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 200;
+}
+header {
+	background-color: $primaryColor;
+	img {
+		width: 250px;
+		background-color: white;
+		padding: 10px;
+		border-radius: 3px;
+		margin: 0 auto;
+		display: block;
+	}
+	li {
+		width: 25%;
+		display: inline-block;
+		float: left;
+		font-size: 20px;
+		text-align: center;
+		padding: 20px 0;
+		a {
+			color: hsla(209, 76%, 61%, 0.5);
+			transition: color 400ms ease-in-out;
+			&:hover {
+				color: hsla(209, 76%, 61%, 1);
+			}
+		}
+	}
+}
+
+.hero {
+	height: 250px;
+	background-image: url("../img/sky.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+main {
+	background-color: $mainColor;
+	padding-bottom: 60px;
+	position: relative;
+	img {
+		display: block;
+		max-width: 100%;
+		width: 20%;
+		position: absolute;
+		left: 15%;
+		top: 20px;
+		border-radius: 50%;
+		padding: 10px;
+		background-color: #aeaeae;
+		border: 1px solid #444;
+		transition: all 1000ms ease-in-out;
+		&:hover {
+			left: 5%;
+			width: 30%;
+			opacity: 0.5;
+		}
+	}
+	article {
+		background-color: $articleColor;
+		width: 70%;
+		margin-bottom: 60px;
+		margin-right: 10%;
+		padding: 0 40px 60px;
+		position: relative;
+		z-index: 1;
+		float: right;
+		&:before {
+			content: "";
+			display: block;
+			width: 100%;
+			height: 100px;
+			background-color: white;
+			position: absolute;
+			left: 0;
+			top: -100px;
+			background-image: url("../img/mail.png");
+			background-repeat: repeat-x;
+		}
+		h1 {
+			font-size: 40px;
+			margin-bottom: 60px;
+		}
+		p {
+			font-size: 20px;
+			line-height: 30px;
+			margin-bottom: 30px;
+		}
+		h2 {
+			font-size: 30px;
+			text-align: right;
+			font-family: 'Homemade Apple', cursive;
+		}
+	}
+}
+
+footer {
+	background-color: $footerColor;
+	padding: 20px;
+	p {
+		color:#777;
+	}
+}

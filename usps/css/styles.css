@@ -1,1 +1,249 @@
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}header{background-color:#c0e6fc}body{color:#333333}.hero{height:250px;background-image:url("../img/sky.jpg");background-size:100%;background-repeat:no-repeat}main{background-color:#eaeaea}article{background-color:#ffffff}footer{background-color:#202020}
+/* line 1, /Users/arturoceballos/Desktop/arturoceballos/usps/css/reset */
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0b1 | 201101 
+   NOTE: WORK IN PROGRESS
+   USE WITH CAUTION AND TEST WITH ABANDON */
+/* line 23, /Users/arturoceballos/Desktop/arturoceballos/usps/css/reset */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+/* line 34, /Users/arturoceballos/Desktop/arturoceballos/usps/css/reset */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+/* line 37, /Users/arturoceballos/Desktop/arturoceballos/usps/css/reset */
+body {
+  line-height: 1; }
+
+/* line 40, /Users/arturoceballos/Desktop/arturoceballos/usps/css/reset */
+ol, ul {
+  list-style: none; }
+
+/* line 43, /Users/arturoceballos/Desktop/arturoceballos/usps/css/reset */
+blockquote, q {
+  quotes: none; }
+
+/* line 47, /Users/arturoceballos/Desktop/arturoceballos/usps/css/reset */
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none; }
+
+/* remember to define visible focus styles! 
+:focus {
+	outline: ?????;
+} */
+/* remember to highlight inserts somehow! */
+/* line 58, /Users/arturoceballos/Desktop/arturoceballos/usps/css/reset */
+ins {
+  text-decoration: none; }
+
+/* line 61, /Users/arturoceballos/Desktop/arturoceballos/usps/css/reset */
+del {
+  text-decoration: line-through; }
+
+/* line 65, /Users/arturoceballos/Desktop/arturoceballos/usps/css/reset */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+/* line 82, /Users/arturoceballos/Desktop/arturoceballos/usps/css/reset */
+.cf:before, .cf:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
+
+/* line 87, /Users/arturoceballos/Desktop/arturoceballos/usps/css/reset */
+.cf:after {
+  clear: both; }
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+/* line 95, /Users/arturoceballos/Desktop/arturoceballos/usps/css/reset */
+.cf {
+  *zoom: 1; }
+
+/* line 99, /Users/arturoceballos/Desktop/arturoceballos/usps/css/reset */
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+/* line 103, /Users/arturoceballos/Desktop/arturoceballos/usps/css/reset */
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: block;
+  clear: both; }
+
+/* line 1, /Users/arturoceballos/Desktop/arturoceballos/usps/css/style */
+body {
+  color: #333333;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 200; }
+
+/* line 6, /Users/arturoceballos/Desktop/arturoceballos/usps/css/style */
+header {
+  background-color: #c0e6fc; }
+  /* line 8, /Users/arturoceballos/Desktop/arturoceballos/usps/css/style */
+  header img {
+    width: 250px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 3px;
+    margin: 0 auto;
+    display: block; }
+  /* line 16, /Users/arturoceballos/Desktop/arturoceballos/usps/css/style */
+  header li {
+    width: 25%;
+    display: inline-block;
+    float: left;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px 0; }
+    /* line 23, /Users/arturoceballos/Desktop/arturoceballos/usps/css/style */
+    header li a {
+      color: rgba(80, 158, 231, 0.5);
+      transition: color 400ms ease-in-out; }
+      /* line 26, /Users/arturoceballos/Desktop/arturoceballos/usps/css/style */
+      header li a:hover {
+        color: #509ee7; }
+
+/* line 33, /Users/arturoceballos/Desktop/arturoceballos/usps/css/style */
+.hero {
+  height: 250px;
+  background-image: url("../img/sky.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat; }
+
+/* line 40, /Users/arturoceballos/Desktop/arturoceballos/usps/css/style */
+main {
+  background-color: #eaeaea;
+  padding-bottom: 60px;
+  position: relative; }
+  /* line 44, /Users/arturoceballos/Desktop/arturoceballos/usps/css/style */
+  main img {
+    display: block;
+    max-width: 100%;
+    width: 20%;
+    position: absolute;
+    left: 15%;
+    top: 20px;
+    border-radius: 50%;
+    padding: 10px;
+    background-color: #aeaeae;
+    border: 1px solid #444;
+    transition: all 1000ms ease-in-out; }
+    /* line 56, /Users/arturoceballos/Desktop/arturoceballos/usps/css/style */
+    main img:hover {
+      left: 5%;
+      width: 30%;
+      opacity: 0.5; }
+  /* line 62, /Users/arturoceballos/Desktop/arturoceballos/usps/css/style */
+  main article {
+    background-color: #ffffff;
+    width: 70%;
+    margin-bottom: 60px;
+    margin-right: 10%;
+    padding: 0 40px 60px;
+    position: relative;
+    z-index: 1;
+    float: right; }
+    /* line 71, /Users/arturoceballos/Desktop/arturoceballos/usps/css/style */
+    main article:before {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 100px;
+      background-color: white;
+      position: absolute;
+      left: 0;
+      top: -100px;
+      background-image: url("../img/mail.png");
+      background-repeat: repeat-x; }
+    /* line 83, /Users/arturoceballos/Desktop/arturoceballos/usps/css/style */
+    main article h1 {
+      font-size: 40px;
+      margin-bottom: 60px; }
+    /* line 87, /Users/arturoceballos/Desktop/arturoceballos/usps/css/style */
+    main article p {
+      font-size: 20px;
+      line-height: 30px;
+      margin-bottom: 30px; }
+    /* line 92, /Users/arturoceballos/Desktop/arturoceballos/usps/css/style */
+    main article h2 {
+      font-size: 30px;
+      text-align: right;
+      font-family: 'Homemade Apple', cursive; }
+
+/* line 100, /Users/arturoceballos/Desktop/arturoceballos/usps/css/style */
+footer {
+  background-color: #202020;
+  padding: 20px; }
+  /* line 103, /Users/arturoceballos/Desktop/arturoceballos/usps/css/style */
+  footer p {
+    color: #777; }
+
+/* line 1, /Users/arturoceballos/Desktop/arturoceballos/usps/css/queries */
+header:first-of-type {
+  display: block; }
+
+/* line 2, /Users/arturoceballos/Desktop/arturoceballos/usps/css/queries */
+header:last-of-type {
+  display: none; }
+
+@media screen and (max-width: 768px) {
+  /* line 6, /Users/arturoceballos/Desktop/arturoceballos/usps/css/queries */
+  header li {
+    display: block;
+    float: none;
+    width: 100%; }
+
+  /* line 12, /Users/arturoceballos/Desktop/arturoceballos/usps/css/queries */
+  .hero {
+    height: 150px; }
+
+  /* line 16, /Users/arturoceballos/Desktop/arturoceballos/usps/css/queries */
+  main img {
+    display: none; }
+  /* line 19, /Users/arturoceballos/Desktop/arturoceballos/usps/css/queries */
+  main article {
+    float: none;
+    width: 90%;
+    margin: 0 5% 20px;
+    padding: 0 5% 20px; }
+    /* line 24, /Users/arturoceballos/Desktop/arturoceballos/usps/css/queries */
+    main article:before {
+      height: 75px;
+      top: -75px; }
+ }
+
+@media screen and (min-width: 992px) {
+  /* line 33, /Users/arturoceballos/Desktop/arturoceballos/usps/css/queries */
+  header:first-of-type {
+    display: none; }
+
+  /* line 34, /Users/arturoceballos/Desktop/arturoceballos/usps/css/queries */
+  header:last-of-type {
+    display: block; }
+ }
